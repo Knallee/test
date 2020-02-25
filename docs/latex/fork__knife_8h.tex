@@ -1,0 +1,77 @@
+\hypertarget{fork__knife_8h}{}\doxysection{fork\+\_\+knife.\+h File Reference}
+\label{fork__knife_8h}\index{fork\_knife.h@{fork\_knife.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structweapon__t}{weapon\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structplayer__t}{player\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{fork__knife_8h_af03955f98200c8b8b31487211de65e09}{player\+\_\+state}} \{ \mbox{\hyperlink{fork__knife_8h_af03955f98200c8b8b31487211de65e09ac188eabb2d61ddb1e8632280be9b0dd5}{alive}}, 
+\mbox{\hyperlink{fork__knife_8h_af03955f98200c8b8b31487211de65e09aa4c5e517ec0dac7aea8b19526c4b8ce2}{wounded}}, 
+\mbox{\hyperlink{fork__knife_8h_af03955f98200c8b8b31487211de65e09a2bc11c916ebf99c8bd8b66b416de6d62}{dead}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{fork__knife_8h_accf1a8c73b83b9fb1eb7c41da3867239}{setup\+\_\+world}} ()
+\item 
+\mbox{\hyperlink{structplayer__t}{player\+\_\+t}} $\ast$ \mbox{\hyperlink{fork__knife_8h_a48ce75e5d8dbbbd351af1aa41187d9b0}{fire\+\_\+weapon}} (\mbox{\hyperlink{structplayer__t}{player\+\_\+t}} $\ast$shooter, \mbox{\hyperlink{structvector__t}{vector\+\_\+t}} direction)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{fork__knife_8h_af03955f98200c8b8b31487211de65e09}\label{fork__knife_8h_af03955f98200c8b8b31487211de65e09}} 
+\index{fork\_knife.h@{fork\_knife.h}!player\_state@{player\_state}}
+\index{player\_state@{player\_state}!fork\_knife.h@{fork\_knife.h}}
+\doxysubsubsection{\texorpdfstring{player\_state}{player\_state}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{fork__knife_8h_af03955f98200c8b8b31487211de65e09}{player\+\_\+state}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{alive@{alive}!fork\_knife.h@{fork\_knife.h}}\index{fork\_knife.h@{fork\_knife.h}!alive@{alive}}}\mbox{\Hypertarget{fork__knife_8h_af03955f98200c8b8b31487211de65e09ac188eabb2d61ddb1e8632280be9b0dd5}\label{fork__knife_8h_af03955f98200c8b8b31487211de65e09ac188eabb2d61ddb1e8632280be9b0dd5}} 
+alive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{wounded@{wounded}!fork\_knife.h@{fork\_knife.h}}\index{fork\_knife.h@{fork\_knife.h}!wounded@{wounded}}}\mbox{\Hypertarget{fork__knife_8h_af03955f98200c8b8b31487211de65e09aa4c5e517ec0dac7aea8b19526c4b8ce2}\label{fork__knife_8h_af03955f98200c8b8b31487211de65e09aa4c5e517ec0dac7aea8b19526c4b8ce2}} 
+wounded&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{dead@{dead}!fork\_knife.h@{fork\_knife.h}}\index{fork\_knife.h@{fork\_knife.h}!dead@{dead}}}\mbox{\Hypertarget{fork__knife_8h_af03955f98200c8b8b31487211de65e09a2bc11c916ebf99c8bd8b66b416de6d62}\label{fork__knife_8h_af03955f98200c8b8b31487211de65e09a2bc11c916ebf99c8bd8b66b416de6d62}} 
+dead&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{fork__knife_8h_a48ce75e5d8dbbbd351af1aa41187d9b0}\label{fork__knife_8h_a48ce75e5d8dbbbd351af1aa41187d9b0}} 
+\index{fork\_knife.h@{fork\_knife.h}!fire\_weapon@{fire\_weapon}}
+\index{fire\_weapon@{fire\_weapon}!fork\_knife.h@{fork\_knife.h}}
+\doxysubsubsection{\texorpdfstring{fire\_weapon()}{fire\_weapon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structplayer__t}{player\+\_\+t}}$\ast$ fire\+\_\+weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer__t}{player\+\_\+t}} $\ast$}]{shooter,  }\item[{\mbox{\hyperlink{structvector__t}{vector\+\_\+t}}}]{direction }\end{DoxyParamCaption})}
+
+Shoot a player weapon.
+
+
+\begin{DoxyParams}{Parameters}
+{\em shooter} & The player initiating the shot \\
+\hline
+{\em direction} & The direction in which the player shoots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+player\+\_\+t$\ast$ Returns the shot player, N\+U\+LL if no player was hit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fork__knife_8h_accf1a8c73b83b9fb1eb7c41da3867239}\label{fork__knife_8h_accf1a8c73b83b9fb1eb7c41da3867239}} 
+\index{fork\_knife.h@{fork\_knife.h}!setup\_world@{setup\_world}}
+\index{setup\_world@{setup\_world}!fork\_knife.h@{fork\_knife.h}}
+\doxysubsubsection{\texorpdfstring{setup\_world()}{setup\_world()}}
+{\footnotesize\ttfamily void setup\+\_\+world (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize world environment and spawn players 
